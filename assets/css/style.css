@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -38,6 +38,7 @@ body {
 
 .header div ul li {
     display: inline-block;
+    flex-direction: column;
     margin-left: 25px;
 }
 
@@ -198,3 +199,15 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .body,
+    .benefits{
+    flex-direction: column;
+  }
+}
+/*@media (min-width: 768px){
+    .benefits{
+        
+    }
+}*/
